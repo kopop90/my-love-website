@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บอกรักสุดเฟี้ยว</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background: url('https://www.google.com/imgres?q=%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%81%E0%B8%A7%E0%B8%99%E0%B9%86&imgurl=https%3A%2F%2Fwww.ananda.co.th%2Fblog%2Fthegenc%2Fwp-content%2Fuploads%2F2024%2F02%2F1145-x-550-px-1.png&imgrefurl=https%3A%2F%2Fwww.ananda.co.th%2Fblog%2Fthegenc%2F%25E0%25B9%2581%25E0%25B8%2584%25E0%25B8%259B%25E0%25B8%258A%25E0%25B8%25B1%25E0%25B9%2588%25E0%25B8%2599%25E0%25B8%2599%25E0%25B9%2588%25E0%25B8%25B2%25E0%25B8%25A3%25E0%25B8%25B1%25E0%25B8%2581%25E0%25B8%25AA%25E0%25B8%2594%25E0%25B9%2583%25E0%25B8%25AA%2F&docid=SZtIw1PfKs95SM&tbnid=4kWhRf6vRuH6TM&vet=12ahUKEwiw3-GQyLSHAxWq4jgGHUhLJ2MQM3oECEkQAA..i&w=1145&h=550&hcb=2&ved=2ahUKEwiw3-GQyLSHAxWq4jgGHUhLJ2MQM3oECEkQAA') no-repeat center center fixed;
+            background-size: cover;
+            color: rgba(187, 6, 6, 0.651);
+            padding: 50px;
+            overflow: hidden;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: rgba(230, 73, 125, 0.5);
+            padding: 40px 30px;
+            border-radius: 15px;
+            display: inline-block;
+            position: relative;
+            max-width: 600px;
+            box-shadow: 0 0 20px rgba(231, 3, 163, 0.507);
+        }
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            animation: fadeIn 2s;
+        }
+        p {
+            font-size: 1.5em;
+            margin: 10px 0;
+            animation: fadeIn 2s;
+        }
+        .heart {
+            color: #ff1493;
+            font-size: 3em;
+            animation: pulse 1s infinite, fadeIn 2s;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .confetti {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            opacity: 0.7;
+            border-radius: 50%;
+            animation: fall 3s linear infinite;
+        }
+        @keyframes fall {
+            0% {
+                transform: translateY(0) rotate(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(600px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        .btn, .link-btn {
+            background-color: #ff1493;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .btn:hover, .link-btn:hover {
+            background-color: #ff69b4;
+            transform: scale(1.1);
+        }
+        .link-btn {
+            background-color: #32CD32;
+        }
+        .link-btn:hover {
+            background-color: #3CB371;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+            animation: fadeIn 2s;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ถึงคนน่ารัก</h1>
+        <p>เรามีบางอย่างจะบอกเธอ...</p>
+        <p class="heart">❤</p>
+        <p>ฉันรักคุณมากที่สุดในโลก!</p>
+        <p>คุณคือคนที่ทำให้ทุกวันของฉันมีความหมายและสดใสขึ้น</p>
+        <p>ฉันอยากจะบอกว่า ฉันโชคดีมากที่มีคุณในชีวิตของฉัน</p>
+        <a href="rose.html" class="btn">ให้หัวใจฉันเต้นแรงอีกครั้ง</a>
+        <a href="https://www.youtube.com/watch?v=oPnjEiwH0Vk" class="link-btn" target="_blank">ฟังเพลงสุดพิเศษนี้สิ</a>
+        <div class="image-container">
+            <img src="https://www.google.com/imgres?q=%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%81%E0%B8%A7%E0%B8%99%E0%B9%86&imgurl=https%3A%2F%2Fi.pinimg.com%2F736x%2F6f%2F7e%2Fb3%2F6f7eb341776c1b7da859aac538f28ebc.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F11681280275528918%2F&docid=vRmsWs9BnkNBQM&tbnid=ZGU1EPJXqOsKyM&vet=12ahUKEwiw3-GQyLSHAxWq4jgGHUhLJ2MQM3oECCEQAA..i&w=736&h=714&hcb=2&ved=2ahUKEwiw3-GQyLSHAxWq4jgGHUhLJ2MQM3oECCEQAA" alt="" />
+        </div>
+    </div>
+
+    <script>
+        function createConfetti() {
+            const container = document.querySelector('.container');
+            for (let i = 0; i < 100; i++) {
+                const confetti = document.createElement('div');
+                confetti.classList.add('confetti');
+                confetti.style.left = Math.random() * 100 + '%';
+                confetti.style.animationDelay = Math.random() * 3 + 's';
+                confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+                container.appendChild(confetti);
+            }
+        }
+
+        function showConfetti() {
+            createConfetti();
+            setTimeout(() => {
+                document.querySelectorAll('.confetti').forEach(confetti => confetti.remove());
+            }, 3000);
+        }
+
+        document.addEventListener('DOMContentLoaded', createConfetti);
+    </script>
+</body>
+</html>
+
